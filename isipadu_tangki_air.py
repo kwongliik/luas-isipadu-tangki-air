@@ -9,12 +9,12 @@ pi = 3.142
 def jejari_tinggi():
     r = float(input("Masukkan jejari tangki air:")) 
     h = float(input("Masukkan tinggi tangki air:"))
-    return (r, h) 
+    return (......)) 
 
 def isipadu():
-    (r,h) = jejari_tinggi()
+    (r,h) = ......
     # Pengiraan isipadu tangki air (V) 
-    V = pi * r**2 * h
+    V = ......
 
     # Output
     print(f"Isipadu tangki air = {V:.2f}")
