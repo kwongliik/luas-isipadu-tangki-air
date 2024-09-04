@@ -1,5 +1,5 @@
 import pytest
-import luas_isipadu_tangki_air
+import luas_tangki_air
 # import sys
 
 # def test_myoutput(capsys):  # or use "capfd" for fd-level
@@ -23,7 +23,7 @@ def test_luas(monkeypatch, capsys):
     monkeypatch.setattr('builtins.input', mock_input)
 
     # Call the main function, which uses input() and prints the result
-    luas_isipadu_tangki_air.luas()
+    luas_tangki_air.luas()
 
     # Capture the printed output
     captured = capsys.readouterr()

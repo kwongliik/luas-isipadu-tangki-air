@@ -15,20 +15,10 @@ def luas():
     (r,h) = jejari_tinggi()  
     # Proses
     # Pengiraan luas permukaan tangki air (A)
-    A = (2 * pi * r * h) + (2 * pi * r ** 2)
+    A = (2 * pi * r * h) + (2 * pi * r**2)
 
     # Output
-    print("Luas tangki air =", round(A,2))
-    
-
-def isipadu():
-    (r,h) = jejari_tinggi()
-    # Pengiraan isipadu tangki air (V) 
-    V = pi * r ** 2 * h
-
-    # Output
-    print("Isipadu tangki air =", round(V,2))
+    print(f"Luas tangki air = {A:.2f}")
 
 if __name__ == "__main__":
     luas()
-    isipadu()

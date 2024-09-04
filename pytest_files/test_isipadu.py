@@ -1,5 +1,5 @@
 import pytest
-import luas_isipadu_tangki_air
+import isipadu_tangki_air
 
 def test_isipadu(monkeypatch, capsys):
     # Define a function to simulate multiple user inputs
@@ -11,7 +11,7 @@ def test_isipadu(monkeypatch, capsys):
     # Use the function to simulate user input
     monkeypatch.setattr('builtins.input', mock_input)
 
-    luas_isipadu_tangki_air.isipadu()
+    isipadu_tangki_air.isipadu()
 
     # Capture the printed output
     captured = capsys.readouterr()
