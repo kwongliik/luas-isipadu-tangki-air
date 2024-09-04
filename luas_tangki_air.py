@@ -1,8 +1,6 @@
 # Atur cara bagi mengira luas permukaan dan isipadu
 # tangki air berbentuk silinder
 
-# Ditulis oleh Cikgu Hu pada 25 April 2022
-
 # Pengisytiharan pemboleh ubah dan pemalar
 pi = 3.142
 
