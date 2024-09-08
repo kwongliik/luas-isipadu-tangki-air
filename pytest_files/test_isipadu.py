@@ -1,5 +1,18 @@
 import pytest
-import isipadu_tangki_air
+from isipadu_tangki_air import *
+#import isipadu_tangki_air
+
+def test_jejari_tinggi(monkeypatch):
+    # Simulate user input for jejari and tinggi
+    inputs = iter(["3.5", "7.2"])  # Mock input values
+    
+    # Mock the input() function
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+    
+    # Run the function and check the output
+    result = jejari_tinggi()
+    assert result == (3.5, 7.2)
+
 
 def test_isipadu(monkeypatch, capsys):
     # Define a function to simulate multiple user inputs
@@ -11,7 +24,7 @@ def test_isipadu(monkeypatch, capsys):
     # Use the function to simulate user input
     monkeypatch.setattr('builtins.input', mock_input)
 
-    isipadu_tangki_air.isipadu()
+    isipadu()
 
     # Capture the printed output
     captured = capsys.readouterr()

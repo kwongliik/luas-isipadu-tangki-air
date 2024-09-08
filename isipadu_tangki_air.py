@@ -10,12 +10,13 @@ def jejari_tinggi():
     return (......) 
 
 def isipadu():
-    (r,h) = jejari_tinggi()
+    (r,h) = ......
     # Pengiraan isipadu tangki air (V) 
     V = ......
 
     # Output
     print(f"Isipadu tangki air = {V:.2f}")
 
+# JANGAN UBAH ATUR CARA DI BAWAH BARIS INI 
 if __name__ == "__main__":
     isipadu()
